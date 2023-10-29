@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,900&family=Miltonian+Tattoo&family=Rubik+Wet+Paint&display=swap');
+        /* Estilos para el cuadro de diálogo modal */
+
+    </style>
+</head>
+<body background="img/fondo-hw.jpg">
+    <section>
+        <div class="tarjet__main">
+            <div>
+                <h1>Introduce tus datos</h1>
+                <p> Descubre cómo, cuándo y dónde morirás</p>
+            </div>
+            <div class="form_inputs">
+                <form id="miFormulario">
+                    <p>
+                        <label for="nombreCompleto">Nombre completo:</label>
+                        <input type="text" id="nombreCompleto" name="nombreCompleto" required />
+                    </p>
+                    <p>
+                        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required />
+                    </p>
+                    <button type="button" id="guardarDatos" class="button-5">Conocer mi muertes</button>
+                </form>               
+            </div>
+        </div>
+    </section>
+
+    <div id="motivoModal" class="modal">
+        <div class="modal-content">
+            <img src="img/tumba.png" alt="" width="30%">
+            <h2>Motivo de Muerte</h2>
+            <p id="motivoTexto"></p>
+            <button id="cerrarModal" class="button-5">Cerrar</button>
+        </div>
+    </div>
+    <div>
+        <img src="img/calabaza.png" alt="" class="floating-animation" id="imagenFlotante1">
+        <img src="img/calabaza.png" alt="" class="floating-animation" id="imagenFlotante2">
+        <img src="img/calabaza.png" alt="" class="floating-animation" id="imagenFlotante3">        
+    </div>
+    <div id="sangreContainer" class="hidden">
+        <div class="blood"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

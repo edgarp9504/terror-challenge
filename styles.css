@@ -1,0 +1,232 @@
+
+html, body{
+    height:100%;
+    margin: 0;
+    font-family: 'Rubik Wet Paint','Miltonian Tattoo',serif;
+  }
+
+section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjet__main{
+    /* background: rgb(255,255,255); */
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 10%, rgba(0,0,0,0.3478641456582633) 100%);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 600px;
+    width: 600px;
+    border-radius: 10px;
+
+}
+
+.tarjet__main h1{
+    color: white;
+    font-weight: 100;
+    font-size: 36px;
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-family: 'Miltonian Tattoo';
+    margin: 0px;
+    padding: 0px;
+}
+
+.form_inputs{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    height: 30%;
+}
+
+.form_inputs p{
+    font-size: 30px;
+}
+
+.form_inputs form input{
+    width: 100%;
+}
+
+
+    
+    /* CSS */
+    .button-5 {
+      align-items: center;
+      background-clip: padding-box;
+      background-color: #fa6400;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: inline-flex;
+      font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      justify-content: center;
+      line-height: 1.25;
+      margin: 0;
+      min-height: 3rem;
+      padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+      position: relative;
+      text-decoration: none;
+      transition: all 250ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: baseline;
+      width: 300px;
+      margin: 30px 30px;
+    }
+    
+    .button-5:hover,
+    .button-5:focus {
+      background-color: #fb8332;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    }
+    
+    .button-5:hover {
+      transform: translateY(-1px);
+    }
+    
+    .button-5:active {
+      background-color: #c85000;
+      box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+      transform: translateY(0);
+    }
+
+    .but{
+        text-align: center;
+        /* width: 30px; */
+    }
+
+
+    /* Estilos para el cuadro de diálogo modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para el contenido dentro del modal */
+.modal-content h2 {
+  text-align: center;
+}
+
+.modal-content p {
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+
+.modal-content button {
+  display: block;
+  margin: 20px auto;
+}
+
+
+#imagenFlotante1 {
+  position: fixed;
+  top: 10px; 
+  right: 10px; 
+  width: 100px; 
+  z-index: 1000; 
+}
+
+#imagenFlotante2 {
+  position: fixed;
+  top: 600px;
+  right: 600px;
+  width: 100px;
+  z-index: 1000;
+}
+
+#imagenFlotante3 {
+  position: fixed;
+  top: 10px; 
+
+  width: 100px; 
+  z-index: 1000; 
+}
+
+
+.floating-animation {
+  animation-name: float;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px); /* Ajusta la distancia del desplazamiento hacia arriba */
+  }
+}
+
+
+
+
+.hidden {
+  display: none;
+}
+
+#sangreContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.2); /* Color rojo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blood {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes caerSangre {
+  0% {
+      transform: translateY(0);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
